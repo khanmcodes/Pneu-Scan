@@ -1,107 +1,170 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    background-color: white;
-    padding: 2px 25px;
-  }
-  
-  .logo, .logoImg {
-    height: auto;
-    width: auto;
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  padding: 2px 25px;
+}
 
-  .logoTitle {
-    display: flex;
-    flex-direction: column;
-    line-height: 15px;
-    font-weight: 600;
-    font-size: 18px;
-  }
+.logo,
+.logoImg {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
 
-  .logo img {
-    padding: 5px;
-    height: 50px;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 50px;
-  }
-  
-  .nav-links li {
-    position: relative;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: var(--darkGreen);
-    font-weight: 600;
-    font-size: 17px;
-    padding: 10px;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .nav-links a:hover {
-    color: rgb(6, 52, 105);
-  }
-  
-  .nav-links a.active::after {
-    content: "";
-    display: block;
-    width: 80%;
-    height: 3px;
-    background-color: #81AFB1;
-    position: absolute;
-    bottom: -5px;
-    transform: translateX(-50%);
-    left: 50%;
-    border-radius: 50px;
-  }
+.logoTitle {
+  display: flex;
+  flex-direction: column;
+  line-height: 15px;
+  font-weight: 600;
+  font-size: 18px;
+}
 
-  .hero-section {
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: auto;
-    padding: 70px 300px;
-  }
+.logo img {
+  padding: 5px;
+  height: 50px;
+}
 
-  .heroL {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
 
-  .heroL .heroH1 {
-    line-height: 64px;
-    font-weight: 600;
-    font-size: 50px;
-  }
+.nav-links li {
+  position: relative;
+}
 
-  .heroL .heroP {
-    font-size: 20px;
-    font-weight: 500;
-    width: 80%;
-    margin-bottom: 20px;
-  }
+.nav-links a {
+  text-decoration: none;
+  color: var(--darkGreen);
+  font-weight: 600;
+  font-size: 17px;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
 
-  .heroR {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.nav-links a:hover {
+  color: rgb(6, 52, 105);
+}
 
-  .heroR img{
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
-    mix-blend-mode: multiply;
-  }
-  
+.nav-links a.active::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 3px;
+  background-color: #81afb1;
+  position: absolute;
+  bottom: -5px;
+  transform: translateX(-50%);
+  left: 50%;
+  border-radius: 50px;
+}
+
+.hero-section, .learn-section, .learn-section-content {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  padding: 100px 300px 70px 300px;
+}
+
+.heroL {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heroImg {
+  display: flex;
+  justify-content: center;
+}
+
+.heroL .heroH1 {
+  line-height: 64px;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.heroL .heroP {
+  font-size: 20px;
+  font-weight: 500;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.heroR {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroR img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.learn-section {
+  flex-direction: column;
+}
+
+.learn-section-content {
+  gap: 5%;
+}
+
+.learnL {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.learnImg {
+  display: flex;
+  justify-content: center;
+}
+
+.learnL img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.learnR {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.learnH1 {
+  line-height: 64px;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.learnH1 span {
+  color: var(--red);
+}
+
+.learnLink {
+  display: flex;
+  align-items: center;
+}
+
+.learn-section .learnLink{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.arrowIcon {
+  font-size: 23px;
+}
