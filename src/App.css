@@ -1,42 +1,65 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    padding: 2px 25px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .logo, .logoImg {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .logoTitle {
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+    font-weight: 600;
+    font-size: 18px;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  .logo img {
+    padding: 5px;
+    height: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--darkGreen);
+    font-weight: 600;
+    font-size: 17px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: rgb(6, 52, 105);
+  }
+  
+  .nav-links a.active::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-color: #81AFB1;
+    position: absolute;
+    bottom: -5px;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 50px;
+  }
+  
