@@ -62,4 +62,46 @@
     left: 50%;
     border-radius: 50px;
   }
+
+  .hero-section {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding: 70px 300px;
+  }
+
+  .heroL {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .heroL .heroH1 {
+    line-height: 64px;
+    font-weight: 600;
+    font-size: 50px;
+  }
+
+  .heroL .heroP {
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .heroR {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroR img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
   
